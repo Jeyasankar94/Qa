@@ -2,16 +2,16 @@
 <testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-25T13:38:00 IST" name="Sign Up" finished-at="2024-01-25T13:38:23 IST" duration-ms="23499">
+  <suite started-at="2024-01-25T13:51:37 IST" name="Sign Up" finished-at="2024-01-25T13:51:58 IST" duration-ms="20169">
     <groups>
     </groups>
-    <test started-at="2024-01-25T13:38:00 IST" name=" Forgot Password Test" finished-at="2024-01-25T13:38:23 IST" duration-ms="23499">
+    <test started-at="2024-01-25T13:51:37 IST" name=" Forgot Password Test" finished-at="2024-01-25T13:51:58 IST" duration-ms="20169">
       <class name="org.testpackage.TC050_ForgotPassword">
-        <test-method is-config="true" signature="initiateExtentReports()[pri:0, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:38:00 IST" name="initiateExtentReports" finished-at="2024-01-25T13:38:00 IST" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="initiateExtentReports()[pri:0, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:51:37 IST" name="initiateExtentReports" finished-at="2024-01-25T13:51:37 IST" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateExtentReports -->
-        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:38:00 IST" name="launch" finished-at="2024-01-25T13:38:03 IST" duration-ms="3696" status="PASS">
+        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:51:37 IST" name="launch" finished-at="2024-01-25T13:51:41 IST" duration-ms="3528" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,11 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="testOTP()[pri:6, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:38:03 IST" name="testOTP" finished-at="2024-01-25T13:38:23 IST" duration-ms="19782" status="PASS">
+        <test-method signature="testOTP()[pri:6, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:51:41 IST" name="testOTP" finished-at="2024-01-25T13:51:58 IST" duration-ms="16622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOTP -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:38:23 IST" name="checkStatus" finished-at="2024-01-25T13:38:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:51:58 IST" name="checkStatus" finished-at="2024-01-25T13:51:58 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,11 +47,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:38:23 IST" name="tearDown" finished-at="2024-01-25T13:38:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:51:58 IST" name="tearDown" finished-at="2024-01-25T13:51:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="generateExtentReport()[pri:0, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:38:23 IST" name="generateExtentReport" finished-at="2024-01-25T13:38:23 IST" duration-ms="223" status="PASS">
+        <test-method is-config="true" signature="generateExtentReport()[pri:0, instance:org.testpackage.TC050_ForgotPassword@7f485fda]" started-at="2024-01-25T13:51:58 IST" name="generateExtentReport" finished-at="2024-01-25T13:51:58 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtentReport -->
