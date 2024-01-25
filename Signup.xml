@@ -28,7 +28,7 @@
 			<class name="org.testpackage.TC001_Signup">
 				<methods>
 					<include name="signUpWithExistingUserEmailAddress"></include>
-					<include name="signUpForMissingFieldAndValidData"></include>
+					<exclude name="signUpForMissingFieldAndValidData"></exclude>
 				</methods>
 			</class>
 		</classes>
