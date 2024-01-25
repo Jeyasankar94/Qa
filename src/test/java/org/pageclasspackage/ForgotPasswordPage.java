@@ -128,7 +128,7 @@ public class ForgotPasswordPage extends VisionBaseClass {
 	}
 	public boolean displayTextofUpdatePasswordScreen() {
 		// Wait for a maximum of 20 seconds for the banner text to be displayed
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	    wait.until(ExpectedConditions.visibilityOf(updatePasswordScreen));
 		
 		String text = updatePasswordScreen.getText();
@@ -155,7 +155,7 @@ public class ForgotPasswordPage extends VisionBaseClass {
 	}
 	public ForgotPasswordPage enterOTP(String num) {
 		// Wait for a maximum of 20 seconds for the banner text to be displayed
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	    wait.until(ExpectedConditions.visibilityOf(otpButton));
 		
 		otpButton.sendKeys(num);
@@ -182,8 +182,8 @@ public class ForgotPasswordPage extends VisionBaseClass {
 		}
 
 	public ForgotPasswordPage enterPassword(String pwd) {
-		// Wait for a maximum of 20 seconds for the banner text to be displayed
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		// Wait for a maximum of 30 seconds for the banner text to be displayed
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	    wait.until(ExpectedConditions.visibilityOf(passwordfield));
 		
 		passwordfield.sendKeys(pwd);
@@ -192,7 +192,7 @@ public class ForgotPasswordPage extends VisionBaseClass {
 
 	public ForgotPasswordPage enterConfirmPassword(String confirmpwd) {
 		// Wait for a maximum of 20 seconds for the banner text to be displayed
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	    wait.until(ExpectedConditions.visibilityOf(confirmPassword));
 		
 		confirmPassword.sendKeys(confirmpwd);
@@ -201,7 +201,7 @@ public class ForgotPasswordPage extends VisionBaseClass {
 
 	public ForgotPasswordPage clickUpdate() {
 		// Wait for a maximum of 20 seconds for the banner text to be displayed
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	    wait.until(ExpectedConditions.elementToBeClickable(updateButton));
 	    
 		updateButton.click();
