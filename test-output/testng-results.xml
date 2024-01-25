@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="33" total="41" passed="8" failed="0" skipped="0">
+<testng-results ignored="33" total="41" passed="0" failed="0" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-17T13:51:18 IST" name="Sign Up" finished-at="2024-01-17T13:53:20 IST" duration-ms="122054">
+  <suite started-at="2024-01-25T10:24:43 IST" name="Sign Up" finished-at="2024-01-25T10:24:43 IST" duration-ms="113">
     <groups>
     </groups>
-    <test started-at="2024-01-17T13:51:18 IST" name=" Sign Up page Negative test" finished-at="2024-01-17T13:53:20 IST" duration-ms="122054">
+    <test started-at="2024-01-25T10:24:43 IST" name=" Sign Up page Negative test" finished-at="2024-01-25T10:24:43 IST" duration-ms="113">
       <class name="org.testpackage.TC001_Signup">
-        <test-method is-config="true" signature="initiateExtentReports()[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:18 IST" name="initiateExtentReports" finished-at="2024-01-17T13:51:18 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="initiateExtentReports()[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="initiateExtentReports" finished-at="2024-01-25T10:24:43 IST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateExtentReports -->
-        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:18 IST" name="launch" finished-at="2024-01-17T13:51:20 IST" duration-ms="1661" status="PASS">
+        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="launch" finished-at="2024-01-25T10:24:43 IST" duration-ms="29" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@e49437]]>
+                <![CDATA[org.testng.TestRunner@4e517165]]>
               </value>
             </param>
             <param index="1">
@@ -24,10 +24,66 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at org.basepackage.VisionBaseClass.launch(VisionBaseClass.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="signUpWithExistingUserEmailAddress(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:32, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:20 IST" name="signUpWithExistingUserEmailAddress" data-provider="SignUpWithExistingUsertData" finished-at="2024-01-17T13:51:32 IST" duration-ms="12089" status="PASS">
+        <test-method signature="signUpWithExistingUserEmailAddress(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:32, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="signUpWithExistingUserEmailAddress" data-provider="SignUpWithExistingUsertData" finished-at="2024-01-25T10:24:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -55,42 +111,74 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at org.basepackage.VisionBaseClass.launch(VisionBaseClass.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpWithExistingUserEmailAddress -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:32 IST" name="checkStatus" finished-at="2024-01-17T13:51:32 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void org.testpackage.TC001_Signup.signUpWithExistingUserEmailAddress(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=signUpWithExistingUserEmailAddress status=SUCCESS method=TC001_Signup.signUpWithExistingUserEmailAddress(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:32, instance:org.testpackage.TC001_Signup@367ffa75] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="checkStatus" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483486" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:32 IST" name="launch" finished-at="2024-01-17T13:51:33 IST" duration-ms="1480" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@e49437]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="launch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483491" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:33 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-17T13:51:44 IST" duration-ms="10882" status="PASS">
+        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-25T10:24:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -118,42 +206,74 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at org.basepackage.VisionBaseClass.launch(VisionBaseClass.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpForMissingFieldAndValidData -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:44 IST" name="checkStatus" finished-at="2024-01-17T13:51:44 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void org.testpackage.TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=signUpForMissingFieldAndValidData status=SUCCESS method=TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:44 IST" name="launch" finished-at="2024-01-17T13:51:45 IST" duration-ms="1154" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@e49437]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="launch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483494" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:45 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-17T13:51:55 IST" duration-ms="9989" status="PASS">
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="checkStatus" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483494" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-25T10:24:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -181,42 +301,70 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at org.basepackage.VisionBaseClass.launch(VisionBaseClass.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpForMissingFieldAndValidData -->
-        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:55 IST" name="launch" finished-at="2024-01-17T13:51:57 IST" duration-ms="1488" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@e49437]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="launch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483497" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:55 IST" name="checkStatus" finished-at="2024-01-17T13:51:55 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void org.testpackage.TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=signUpForMissingFieldAndValidData status=SUCCESS method=TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:51:57 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-17T13:52:11 IST" duration-ms="14463" status="PASS">
+        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-25T10:24:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -244,42 +392,78 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at org.basepackage.VisionBaseClass.launch(VisionBaseClass.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpForMissingFieldAndValidData -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:11 IST" name="checkStatus" finished-at="2024-01-17T13:52:11 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void org.testpackage.TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=signUpForMissingFieldAndValidData status=SUCCESS method=TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="checkStatus" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483497" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:11 IST" name="launch" finished-at="2024-01-17T13:52:13 IST" duration-ms="1347" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@e49437]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="checkStatus" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483499" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="launch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483500" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:13 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-17T13:52:29 IST" duration-ms="16058" status="PASS">
+        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-25T10:24:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -307,42 +491,74 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at org.basepackage.VisionBaseClass.launch(VisionBaseClass.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpForMissingFieldAndValidData -->
-        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:29 IST" name="launch" finished-at="2024-01-17T13:52:30 IST" duration-ms="1426" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@e49437]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:29 IST" name="checkStatus" finished-at="2024-01-17T13:52:29 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void org.testpackage.TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=signUpForMissingFieldAndValidData status=SUCCESS method=TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="checkStatus" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483503" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:30 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-17T13:52:42 IST" duration-ms="12093" status="PASS">
+        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="launch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483503" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-25T10:24:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -370,42 +586,74 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at org.basepackage.VisionBaseClass.launch(VisionBaseClass.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpForMissingFieldAndValidData -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:42 IST" name="checkStatus" finished-at="2024-01-17T13:52:42 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void org.testpackage.TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=signUpForMissingFieldAndValidData status=SUCCESS method=TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="checkStatus" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483505" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:42 IST" name="launch" finished-at="2024-01-17T13:52:44 IST" duration-ms="1480" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@e49437]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="launch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483506" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:44 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-17T13:52:58 IST" duration-ms="14559" status="PASS">
+        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-25T10:24:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -433,42 +681,74 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at org.basepackage.VisionBaseClass.launch(VisionBaseClass.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpForMissingFieldAndValidData -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:58 IST" name="checkStatus" finished-at="2024-01-17T13:52:58 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void org.testpackage.TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=signUpForMissingFieldAndValidData status=SUCCESS method=TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="checkStatus" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483508" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:52:58 IST" name="launch" finished-at="2024-01-17T13:53:00 IST" duration-ms="1526" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@e49437]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="launch(org.testng.ITestContext,java.lang.String)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="launch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483508" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:53:00 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-17T13:53:20 IST" duration-ms="20274" status="PASS">
+        <test-method signature="signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="signUpForMissingFieldAndValidData" data-provider="SignUpWithDataAndWithoutData" finished-at="2024-01-25T10:24:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -496,30 +776,74 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at /usr/bin/chromedriver, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at org.basepackage.VisionBaseClass.launch(VisionBaseClass.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpForMissingFieldAndValidData -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:53:20 IST" name="checkStatus" finished-at="2024-01-17T13:53:20 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void org.testpackage.TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[TestResult name=signUpForMissingFieldAndValidData status=SUCCESS method=TC001_Signup.signUpForMissingFieldAndValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:35, instance:org.testpackage.TC001_Signup@367ffa75] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="checkStatus" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1706158483511" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:53:20 IST" name="tearDown" finished-at="2024-01-17T13:53:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="tearDown" finished-at="2024-01-25T10:24:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="generateExtentReport()[pri:0, instance:org.testpackage.TC001_Signup@367ffa75]" started-at="2024-01-17T13:53:20 IST" name="generateExtentReport" finished-at="2024-01-17T13:53:21 IST" duration-ms="755" status="PASS">
+        <test-method is-config="true" signature="generateExtentReport()[pri:0, instance:org.testpackage.TC001_Signup@353352b6]" started-at="2024-01-25T10:24:43 IST" name="generateExtentReport" finished-at="2024-01-25T10:24:43 IST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtentReport -->

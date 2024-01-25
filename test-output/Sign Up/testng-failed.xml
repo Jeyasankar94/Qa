@@ -8,7 +8,7 @@
       <class name="org.testpackage.TC001_Signup">
         <methods>
           <include name="generateExtentReport"/>
-          <include name="signUpWithExistingUserEmailAddress" invocation-numbers="8"/>
+          <include name="signUpWithExistingUserEmailAddress"/>
           <include name="tearDown"/>
           <include name="checkStatus"/>
           <include name="launch"/>
