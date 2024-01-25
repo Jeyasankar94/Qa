@@ -1,0 +1,68 @@
+[
+  
+  {
+    "firstName": "Jey",
+    "lastName": "San",
+    "email": "john18.doe@example1.com",
+    "mobileNumber": "7644557700",
+    "password": "secretpassword"
+  },
+  {
+ 	"firstName": "",
+     	 "lastName": "",
+    	 "email": "",
+    	 "mobileNumber": "",
+     	 "password": ""
+    },
+    { 
+    "firstName": "",
+     	 "lastName": "Sir",
+    	 "email": "dheeraj@visionias.in",
+    	 "mobileNumber": "7894561230",
+     	 "password": "Jsa12345"
+    },
+    { 
+     "firstName": "Dheeraj",
+     	 "lastName": "",
+    	 "email": "sandeep@visionias.in",
+    	 "mobileNumber": "7894561230",
+     	 "password": "Jsa12345"
+    },
+    { 
+     "firstName": "Sandeep",
+     	 "lastName": "pal",
+    	 "email": "",
+    	 "mobileNumber": "7894561230",
+     	 "password": "K 12345"
+    },
+    { 
+     "firstName": "Chaitra",
+     	 "lastName": "Bs",
+    	 "email": "chaitra@gmail.in",
+    	 "mobileNumber": "",
+     	 "password": "Jsa12345"
+    },
+    { 
+     "firstName": "Nalin",
+     	 "lastName": "Mad",
+    	 "email": "bansal@yahoo.com",
+    	 "mobileNumber": "9230456789",
+     	 "password": ""
+    },
+     { 
+     "firstName": "Jeya",
+     	 "lastName": "Sankar",
+    	 "email": "jeya.47@look.com",
+    	 "mobileNumber": "9025133078",
+     	 "password": "1234@jk"
+    },
+     {
+      "firstName": "Jeya",
+      "lastName": "sankar",
+      "email": "jeyasankar@visionias.in",
+      "mobileNumber": "9025133078",
+      "password": "123456"
+    }
+
+]
+

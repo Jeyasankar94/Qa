@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false" thread-count="1">
+	<parameter name="author" value="Jeyasankar" />
+
+	<test name=" Classroom Test" enabled="true">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="org.testpackage.TC050_Classroom">
+				<methods>
+					<include name="classroomFilterTest"></include>
+					<include name="classroomPaginationTest"></include>
+					<include name="classroomCourseTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

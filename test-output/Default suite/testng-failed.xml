@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="org.testpackage.TC390_ResearchAndAnalysisTest">
+        <methods>
+          <include name="generateExtentReport"/>
+          <include name="testUserCanShareThePageLinkViaTelegramOfResearchAndAnalysisPage"/>
+          <include name="testPaginationInResearchAndAnalysisPage"/>
+          <include name="testBannerTextOfResearchAndAnalysisPage"/>
+          <include name="tearDown"/>
+          <include name="testPresenceOfYearAndMediumInResearchAndAnalysisPageDocument"/>
+          <include name="testLikeCountAfterUserLoginInResearchAndAnalysisPage"/>
+          <include name="testPresenceOfDocumentInResearchAndAnalysisPage"/>
+          <include name="launch"/>
+          <include name="testLikeCountBeforeUserLoginInResearchAndAnalysisPage"/>
+          <include name="testTitleOfDocumentInResearchAndAnalysisPage"/>
+          <include name="testDownloadCountOfDocumentBeforeUserLoginInResearchAndAnalysisPage"/>
+          <include name="testClearFilterOptionResearchAndAnalysisPage"/>
+          <include name="testLikeCountOfDocumentAtBeforeUserLoginInResearchAndAnalysisPage"/>
+          <include name="testUserCanShareThePageLinkViaFacebookOfResearchAndAnalysisPage"/>
+          <include name="testFilterFunctionalityOfResearchAndAnalysisPage"/>
+          <include name="checkStatus"/>
+          <include name="testLikeCountInResearchAndAnalysisPageDocument"/>
+          <include name="testUserCanShareThePageLinkViaWhatsappOfResearchAndAnalysisPage"/>
+          <include name="testUserCanShareThePageLinkViaGmailOfResearchAndAnalysisPage"/>
+          <include name="initiateExtentReports"/>
+          <include name="testDownloadCountOfDocumentAfterUserLoginInResearchAndAnalysisPage"/>
+        </methods>
+      </class> <!-- org.testpackage.TC390_ResearchAndAnalysisTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

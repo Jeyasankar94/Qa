@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Sign Up]" guice-stage="DEVELOPMENT">
+  <parameter name="author" value="Jeyasankar"/>
+  <test thread-count="3" name=" Sign Up page Negative test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="org.testpackage.TC001_Signup">
+        <methods>
+          <include name="generateExtentReport"/>
+          <include name="signUpWithExistingUserEmailAddress" invocation-numbers="8"/>
+          <include name="tearDown"/>
+          <include name="checkStatus"/>
+          <include name="launch"/>
+          <include name="initiateExtentReports"/>
+          <include name="signUpForMissingFieldAndValidData"/>
+        </methods>
+      </class> <!-- org.testpackage.TC001_Signup -->
+    </classes>
+  </test> <!--  Sign Up page Negative test(failed) -->
+</suite> <!-- Failed suite [Sign Up] -->

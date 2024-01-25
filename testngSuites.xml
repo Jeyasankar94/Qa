@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="author" value="Jeyasankar" />
+
+	<suite-files>
+		<suite-file path="./Signup.xml" />
+		<suite-file path="./Resources.xml" />
+		<suite-file path="./currentAffairs.xml" />
+		<suite-file path="./classroom.xml" />
+		<suite-file path="./prelimsTestSeries.xml" />
+		<suite-file path="./register.xml" />
+	</suite-files>
+</suite>

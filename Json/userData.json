@@ -1,0 +1,24 @@
+{"Sheet1":
+[
+{
+"Username ":"jeyasankar@visionias.in",
+"password":"123456@Jk",
+"Expected Result":"User succesfully logged in with valid credential"
+},
+{
+"Username ":"jeyasankar@visionias.innn",
+"password":"123456@Jk",
+"Expected Result":" Incorrect username or password."
+},
+{
+"Username ":"jeyasankar@visionias.innn",
+"password":"ssss",
+"Expected Result":" Incorrect username or password."
+},
+{
+"Username ":"jeyasankar@visionias.in",
+"password":"sss",
+"Expected Result":" Incorrect username or password."
+}
+]
+}

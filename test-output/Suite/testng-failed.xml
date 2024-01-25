@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="author" value="Jeyasankar"/>
+  <test thread-count="2" parallel="methods" name=" News Today English Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="org.testpackage.TC130_NewsTodayEnglish">
+        <methods>
+          <include name="testBannerTextOfNewsTodayEnglish"/>
+          <include name="generateExtentReport"/>
+          <include name="testUserCanShareThePageLinkViaFacebookOfNewsTodayEnglish"/>
+          <include name="testLikeCountAfterUserLoginInNewsTodayEnglish"/>
+          <include name="testLikeCountBeforeUserLoginInNewsTodayEnglish"/>
+          <include name="tearDown"/>
+          <include name="testLikeCountOfDocumentAtBeforeUserLoginInNewsTodayEnglish"/>
+          <include name="testPaginationInNewsTodayEnglish"/>
+          <include name="launch"/>
+          <include name="testUserCanShareThePageLinkViaGmailOfNewsTodayEnglish"/>
+          <include name="testDownloadCountOfDocumentBeforeUserLoginInNewsTodayEnglish"/>
+          <include name="testFilterFunctionalityOfNewsTodayEnglish"/>
+          <include name="testPresenceOfYearAndMediumInNewsTodayEnglishDocument"/>
+          <include name="testClearFilterOptionInNewsTodayEnglish"/>
+          <include name="checkStatus"/>
+          <include name="testUserCanShareThePageLinkViaTelegramOfNewsTodayEnglish"/>
+          <include name="testLikeCountInNewsTodayEnglishDocument"/>
+          <include name="testPresenceOfDocumentInNewsTodayEnglish"/>
+          <include name="testUserCanShareThePageLinkViaWhatsappOfNewsTodayEnglish"/>
+          <include name="testTitleOfDocumentInNewsTodayEnglish"/>
+          <include name="initiateExtentReports"/>
+        </methods>
+      </class> <!-- org.testpackage.TC130_NewsTodayEnglish -->
+    </classes>
+  </test> <!--  News Today English Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
