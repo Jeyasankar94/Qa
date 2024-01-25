@@ -163,11 +163,19 @@ public class ForgotPasswordPage extends VisionBaseClass {
 	}
 	// Entering OTP in the Enter verification screen
 		public ForgotPasswordPage enterOTP() {
+			// Wait for a maximum of 30 seconds before interacting with the download button
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP1));
 			enterOTP1.sendKeys("1");
+			wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP2));
 			enterOTP2.sendKeys("2");
+			wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP3));
 			enterOTP3.sendKeys("3");
+			wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP4));
 			enterOTP4.sendKeys("4");
+			wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP5));
 			enterOTP5.sendKeys("1");
+			wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP6));
 			enterOTP6.sendKeys("3");
 			extentTest.info("OTP generated for Registered Email ID");
 			return this;

@@ -93,17 +93,17 @@ public class SignUp extends VisionBaseClass {
 	@FindBy(xpath = "//h4[text()='Enter the verification code']")
 	public WebElement verificationOTPwindow;
 
-	@FindBy(xpath = "(//*[@class='flex justify-center items-center']/div/input)[1]")
+	@FindBy(xpath = "(//input[contains(@class,'input input-bordered')])[1]")
 	private WebElement enterOTP1;
-	@FindBy(xpath = "(//*[@class='flex justify-center items-center']/div/input)[2]")
+	@FindBy(xpath = "(//input[contains(@class,'input input-bordered')])[2]")
 	private WebElement enterOTP2;
-	@FindBy(xpath = "(//*[@class='flex justify-center items-center']/div/input)[3]")
+	@FindBy(xpath = "(//input[contains(@class,'input input-bordered')])[3]")
 	private WebElement enterOTP3;
-	@FindBy(xpath = "(//*[@class='flex justify-center items-center']/div/input)[4]")
+	@FindBy(xpath = "(//input[contains(@class,'input input-bordered')])[4]")
 	private WebElement enterOTP4;
-	@FindBy(xpath = "(//*[@class='flex justify-center items-center']/div/input)[5]")
+	@FindBy(xpath = "(//input[contains(@class,'input input-bordered')])[5]")
 	private WebElement enterOTP5;
-	@FindBy(xpath = "(//*[@class='flex justify-center items-center']/div/input)[6]")
+	@FindBy(xpath = "(//input[contains(@class,'input input-bordered')])[6]")
 	private WebElement enterOTP6;
 
 	@FindBy(xpath = "//span[text()='Verify']")
@@ -425,11 +425,20 @@ public class SignUp extends VisionBaseClass {
 
 	// Entering OTP in the Enter verification screen
 	public SignUp enterOTP() {
+		
+		// Wait for a maximum of 30 seconds before interacting with the download button
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP1));
 		enterOTP1.sendKeys("1");
+		wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP2));
 		enterOTP2.sendKeys("2");
+		wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP3));
 		enterOTP3.sendKeys("3");
+		wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP4));
 		enterOTP4.sendKeys("4");
+		wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP5));
 		enterOTP5.sendKeys("1");
+		wait.until(ExpectedConditions.visibilityOfAllElements(enterOTP6));
 		enterOTP6.sendKeys("3");
 		extentTest.info("OTP generated for Registered Email ID");
 		return this;
