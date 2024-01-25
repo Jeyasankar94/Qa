@@ -34,7 +34,17 @@
 		</classes>
 	</test>
 
-
+<test name=" Sign Up page Negative test" enabled="true">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="org.testpackage.TC001_Signup">
+				<methods>
+					<include name="signUpWithExistingUserEmailAddress"></include>
+					<exclude name="signUpForMissingFieldAndValidData"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
 
 	<test name=" Forgot Password Test" parallel="methods" thread-count="1" enabled="false">
 		<parameter name="browser" value="edge"></parameter>
