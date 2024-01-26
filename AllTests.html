@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 26, 2024 07:05:15 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 26, 2024 07:16:18 AM</span></a>
 </li>
 </ul>
 </div>
@@ -106,9 +106,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name"> Forgot Password Test</p>
+            <p class="name"> Sign Up page Negative test</p>
             <p class="text-sm">
-              <span>7:05:17 AM</span> / <span>00:00:19:320</span>
+              <span>7:16:21 AM</span> / <span>00:00:42:999</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -116,10 +116,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail"> Forgot Password Test</h5>
-<span class='badge badge-success'>01.26.2024 7:05:17 AM</span>
-<span class='badge badge-danger'>01.26.2024 7:05:37 AM</span>
-<span class='badge badge-default'>00:00:19:320</span>
+<h5 class="test-status text-fail"> Sign Up page Negative test</h5>
+<span class='badge badge-success'>01.26.2024 7:16:21 AM</span>
+<span class='badge badge-danger'>01.26.2024 7:17:04 AM</span>
+<span class='badge badge-default'>00:00:42:999</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -128,7 +128,7 @@
 <span class="badge badge-pill badge-default"></span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='E:\Qa\.\reports\ Forgot Password Test_testOTP.jpg' src="E:\Qa\.\reports\ Forgot Password Test_testOTP.jpg">
+<img data-featherlight='E:\Qa\.\reports\ Sign Up page Negative test_signUpWithExistingUserEmailAddress.jpg' src="E:\Qa\.\reports\ Sign Up page Negative test_signUpWithExistingUserEmailAddress.jpg">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -137,34 +137,83 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:05:22 AM</td>
+        <td>7:16:33 AM</td>
         <td>
-          Succesfully Navigated to Vision Website
+          Entered First Name : Jeya
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:05:23 AM</td>
+        <td>7:16:33 AM</td>
         <td>
-          clicked Login button in HomePage
+          Entered First Name Length : 4
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:05:26 AM</td>
+        <td>7:16:33 AM</td>
         <td>
-          clicked Forgot password
+          Entered Last Name : sankar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:16:33 AM</td>
+        <td>
+          Entered Last Name Length : 6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:16:33 AM</td>
+        <td>
+          Entered Email Address : jeyasankar@visionias.in
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:16:33 AM</td>
+        <td>
+          Entered Email Id Length : 23
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:16:34 AM</td>
+        <td>
+          Entered Mobile Number : +91 9025133078
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:16:34 AM</td>
+        <td>
+          Entered Mobile Number Length : 14
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:16:34 AM</td>
+        <td>
+          Entered Password : 123456
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:16:34 AM</td>
+        <td>
+          Entered Password Length : 6
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:05:37 AM</td>
+        <td>7:17:04 AM</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Resend']' (tried for 10 second(s) with 500 milliseconds interval)
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Email address already exists. Please try a different one.']' (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at org.pageclasspackage.ForgotPasswordPage.clickResendPassword(ForgotPasswordPage.java:141)
-	at org.testpackage.TC050_ForgotPassword.testOTP(TC050_ForgotPassword.java:135)
+	at org.pageclasspackage.SignUp.displayValidationMessageInEmailForExistingUser(SignUp.java:392)
+	at org.testpackage.TC001_Signup.signUpWithExistingUserEmailAddress(TC001_Signup.java:660)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -177,19 +226,32 @@
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Resend']"}
-  (Session info: chrome=121.0.6167.85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Email address already exists. Please try a different one.']"}
+  (Session info: MicrosoftEdge=120.0.2210.144)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e6207d14467e34abe9f17d8b97eca47, findElement {using=xpath, value=//*[text()='Resend']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\JEYASA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50701/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e6207d14467e34abe9f17d8b97eca47
-	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [aeb59e261fa7241a6f64a4f20ea6778a, findElement {using=xpath, value=//span[text()='Email address already exists. Please try a different one.']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.144, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52009}, msedge: {msedgedriverVersion: 120.0.2210.144 (cbca972d598..., userDataDir: C:\Users\JEYASA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52009/devtoo..., se:cdpVersion: 120.0.2210.144, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aeb59e261fa7241a6f64a4f20ea6778a
+	at jdk.internal.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
@@ -205,15 +267,13 @@ Session ID: 1e6207d14467e34abe9f17d8b97eca47
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy26.isDisplayed(Unknown Source)
+	at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	... 17 more
+	... 30 more
 </textarea>
           
         </td>
@@ -264,9 +324,9 @@ Session ID: 1e6207d14467e34abe9f17d8b97eca47
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>07:05:17 AM</td>
+<td>07:16:21 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'> Forgot Password Test</a>
+<a href="#" class="linked" test-id='1' id='1'> Sign Up page Negative test</a>
 </td>
 </tr>
 </tbody>
@@ -313,9 +373,9 @@ Session ID: 1e6207d14467e34abe9f17d8b97eca47
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>07:05:17 AM</td>
+<td>07:16:21 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'> Forgot Password Test</a>
+<a href="#" class="linked" test-id='1' id='1'> Sign Up page Negative test</a>
 </td>
 </tr>
 </tbody>
@@ -362,9 +422,9 @@ Session ID: 1e6207d14467e34abe9f17d8b97eca47
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>07:05:17 AM</td>
+<td>07:16:21 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'> Forgot Password Test</a>
+<a href="#" class="linked" test-id='1' id='1'> Sign Up page Negative test</a>
 </td>
 </tr>
 </tbody>
@@ -384,13 +444,13 @@ Session ID: 1e6207d14467e34abe9f17d8b97eca47
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 26, 2024 07:05:15 AM</h3>
+<h3>Jan 26, 2024 07:16:18 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 26, 2024 07:05:37 AM</h3>
+<h3>Jan 26, 2024 07:17:04 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -443,8 +503,8 @@ Session ID: 1e6207d14467e34abe9f17d8b97eca47
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='25%'><b>1</b> events failed,
-<b data-tooltip='%'>3</b> others
+<small data-tooltip='9%'><b>1</b> events failed,
+<b data-tooltip='%'>10</b> others
 </small>
 </div>
 </div>
@@ -460,7 +520,7 @@ Session ID: 1e6207d14467e34abe9f17d8b97eca47
 </div></div>
 <script>
 var timeline = {
-" Forgot Password Test":19.32
+" Sign Up page Negative test":42.999
 };
 </script>
 <div class="row">
@@ -543,7 +603,7 @@ passEvents: 0,
 failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 3
+infoEvents: 10
 };
 </script>        </div>
       </div>

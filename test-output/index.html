@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Sign_Up">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Sign_Up" title="org.testpackage.TC050_ForgotPassword" class="method navigator-link" hash-for-method="testOTP">testOTP</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Sign_Up" title="org.testpackage.TC001_Signup" class="method navigator-link" hash-for-method="signUpWithExistingUserEmailAddress(Jeya, sankar, jeyasankar@visionias.in, 9025133078, 123456)">signUpWithExistingUserEmailAddress(Jeya, sankar, jeyasankar@visionias.in, 9025133078, 123456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Sign_Up -->
@@ -122,31 +122,30 @@
           <div class="suite-Sign_Up-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">org.testpackage.TC050_ForgotPassword</span>
+              <span class="class-name">org.testpackage.TC001_Signup</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testOTP">
-                  </a> <!-- testOTP -->
-                  <span class="method-name">testOTP</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[text()=&apos;Resend&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+                  <a name="signUpWithExistingUserEmailAddress(Jeya, sankar, jeyasankar@visionias.in, 9025133078, 123456)">
+                  </a> <!-- signUpWithExistingUserEmailAddress(Jeya, sankar, jeyasankar@visionias.in, 9025133078, 123456) -->
+                  <span class="method-name">signUpWithExistingUserEmailAddress</span>
+                  <span class="parameters">(Jeya, sankar, jeyasankar@visionias.in, 9025133078, 123456)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text()=&apos;Email address already exists. Please try a different one.&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at org.pageclasspackage.ForgotPasswordPage.clickResendPassword(ForgotPasswordPage.java:141)
-	at org.testpackage.TC050_ForgotPassword.testOTP(TC050_ForgotPassword.java:135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Resend&apos;]&quot;}
-  (Session info: chrome=121.0.6167.85)
+	at org.pageclasspackage.SignUp.displayValidationMessageInEmailForExistingUser(SignUp.java:392)
+	at org.testpackage.TC001_Signup.signUpWithExistingUserEmailAddress(TC001_Signup.java:660)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Email address already exists. Please try a different one.&apos;]&quot;}
+  (Session info: MicrosoftEdge=120.0.2210.144)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e6207d14467e34abe9f17d8b97eca47, findElement {using=xpath, value=//*[text()=&apos;Resend&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\JEYASA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50701/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e6207d14467e34abe9f17d8b97eca47
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [aeb59e261fa7241a6f64a4f20ea6778a, findElement {using=xpath, value=//span[text()=&apos;Email address already exists. Please try a different one.&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.144, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52009}, msedge: {msedgedriverVersion: 120.0.2210.144 (cbca972d598..., userDataDir: C:\Users\JEYASA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52009/devtoo..., se:cdpVersion: 120.0.2210.144, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aeb59e261fa7241a6f64a4f20ea6778a
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -160,16 +159,14 @@ Session ID: 1e6207d14467e34abe9f17d8b97eca47
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy26.isDisplayed(Unknown Source)
+	at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	... 17 more
-... Removed 15 stack frames
+	... 30 more
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -186,17 +183,17 @@ Session ID: 1e6207d14467e34abe9f17d8b97eca47
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;3&quot; name=&quot;Sign Up&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;author&quot; value=&quot;Jeyasankar&quot;/&gt;
-  &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot; Forgot Password Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot; Sign Up page Negative test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.testpackage.TC050_ForgotPassword&quot;&gt;
+      &lt;class name=&quot;org.testpackage.TC001_Signup&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;testOTP&quot;/&gt;
-          &lt;exclude name=&quot;testByEnteringValidEmailAddress&quot;/&gt;
+          &lt;include name=&quot;signUpWithExistingUserEmailAddress&quot;/&gt;
+          &lt;exclude name=&quot;signUpForMissingFieldAndValidData&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- org.testpackage.TC050_ForgotPassword --&gt;
+      &lt;/class&gt; &lt;!-- org.testpackage.TC001_Signup --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!--  Forgot Password Test --&gt;
+  &lt;/test&gt; &lt;!--  Sign Up page Negative test --&gt;
 &lt;/suite&gt; &lt;!-- Sign Up --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,7 +205,7 @@ Session ID: 1e6207d14467e34abe9f17d8b97eca47
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name"> Forgot Password Test (1 class)</span>
+                <span class="test-name"> Sign Up page Negative test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -236,14 +233,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testOTP')
-data.setCell(0, 2, 'org.testpackage.TC050_ForgotPassword')
-data.setCell(0, 3, 19076);
+data.setCell(0, 1, 'signUpWithExistingUserEmailAddress')
+data.setCell(0, 2, 'org.testpackage.TC001_Signup')
+data.setCell(0, 3, 42797);
 window.suiteTableData['Sign_Up']= { tableData: data, tableDiv: 'times-div-Sign_Up'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Sign_Up">
               </div> <!-- times-div-Sign_Up -->
             </div> <!-- times-div -->
@@ -258,21 +255,79 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Sign_Up" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">34 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">org.testpackage.TC050_ForgotPassword</span>
+              <span class="ignored-class-name">org.testpackage.TC001_Signup</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testByEnteringNonRegisteredEmailAddress</span>
+                <span class="ignored-method-name">testByEnteringOnlyNumbersInPassword</span>
                 <br/>
-                <span class="ignored-method-name">testByEnteringInValidEmailAddress</span>
+                <span class="ignored-method-name">testByEnteringEmailAddressWithoutDomainName</span>
                 <br/>
-                <span class="ignored-method-name">testByEnteringValidEmailAddress</span>
+                <span class="ignored-method-name">testByEnteringTheEmailidWithDomainNameDotNet</span>
                 <br/>
-                <span class="ignored-method-name">testTitleOfForgotPasswordWindow</span>
+                <span class="ignored-method-name">testByEnteringAlphaNumericCharacterInFirstAndLastnameFields</span>
                 <br/>
-                <span class="ignored-method-name">testWithoutEmailAddress</span>
+                <span class="ignored-method-name">testByEnteringEmailAddressWithTailingDotOperators</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringEmailAddressWithTwoAtSymbols</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringSpecialCharactersInMobileNumberField</span>
+                <br/>
+                <span class="ignored-method-name">signUpAfterFifthTimeWithSameEmail</span>
+                <br/>
+                <span class="ignored-method-name">testSpaceCountedAsACharacterButNotAtTheBeginningAndEndofThePassword</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringTheEmailidWithDomainNameDotOrg</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringSpaceBetweenEachAlphabetsInFirstAndLastnameFields</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringCountryName</span>
+                <br/>
+                <span class="ignored-method-name">testLabels</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringOnlySpecialCharactersInFirstAndLastnameFields</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringZeroAtInitialPlaceInMobileNumberField</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringAlphaNumericBeforeDomainInEmailAddressField</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringDotOperatorBetweenNameInFirstAndLastnameFields</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringOnlyNumbersInEmailAddressField</span>
+                <br/>
+                <span class="ignored-method-name">testLessThanMinimumCharacterLimitationInSignupFields</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringSameNameInFirstAndLastnameFields</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringNumbersInFirstAndLastnameFields</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringtenZerosInMobileNumberField</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringOnlySpecialCharactersInPassword</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringTheBlankSpaceBetweenMobileNumber</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringTheEmailidWithDomainNameDotIn</span>
+                <br/>
+                <span class="ignored-method-name">testMinimumCharacterLimitationInSignupFields</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringOnlyAlphabetsInPassword</span>
+                <br/>
+                <span class="ignored-method-name">signUpWithSameEmailForFiveTimes</span>
+                <br/>
+                <span class="ignored-method-name">testGreaterThanMaximumCharacterLimitationInSignupFields</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringEmailAddressWithoutDotOperator</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringEmailAddressWithoutAtSymbol</span>
+                <br/>
+                <span class="ignored-method-name">testByEnteringCobinationOfAllCharactersInPassword</span>
+                <br/>
+                <span class="ignored-method-name">testMaximumCharacterLimitationInSignupFields</span>
+                <br/>
+                <span class="ignored-method-name">signUpForMissingFieldAndValidData</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -284,32 +339,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.testpackage.TC050_ForgotPassword</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.testpackage.TC001_Signup</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initiateExtentReports</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">launch(org.testng.TestRunner@2f3c6ac4, chrome)</span>
-                <span class="method-start">154 ms</span>
+                <span class="method-name">launch(org.testng.TestRunner@7e58f697, edge)</span>
+                <span class="method-start">180 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testOTP</span>
-                <span class="method-start">2277 ms</span>
+                <span class="method-name">signUpWithExistingUserEmailAddress(Jeya, sankar, jeyasankar@visionias.in, 9025133078, 123456)</span>
+                <span class="method-start">3637 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">checkStatus(public void org.testpackage.TC050_ForgotPassword.testOTP() throws java.lang.Exception, [TestResult n...)</span>
-                <span class="method-start">21362 ms</span>
+                <span class="method-name">checkStatus(public void org.testpackage.TC001_Signup.signUpWithExistingUserEmailAddress(java.lang.String,java.la...)</span>
+                <span class="method-start">46437 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21600 ms</span>
+                <span class="method-start">46632 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">generateExtentReport</span>
-                <span class="method-start">21622 ms</span>
+                <span class="method-start">46653 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
