@@ -13,10 +13,18 @@ pipeline {
             }
         }
 
-        stage('Run Selenium Tests') {
+        stage('Build') {
             steps {
                 script {
-                    sh "${MAVEN_HOME}/bin/mvn clean test"
+                    sh "${MAVEN_HOME}/bin/mvn clean compile"
+                }
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                script {
+                    sh "${MAVEN_HOME}/bin/mvn test"
                 }
             }
         }
@@ -25,8 +33,8 @@ pipeline {
     post {
         always {
             emailext attachLog: true,
-                body: 'Selenium tests ${BUILD_STATUS}',
-                subject: 'Selenium Test Execution - ${BUILD_STATUS}',
+                body: 'Test execution ${BUILD_STATUS}',
+                subject: 'Test Execution - ${BUILD_STATUS}',
                 to: 'jeyasankar94cse@gmail.com'
         }
     }
