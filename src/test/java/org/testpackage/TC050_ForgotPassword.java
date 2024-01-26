@@ -128,7 +128,7 @@ public class TC050_ForgotPassword extends VisionBaseClass {
 		pom.getForgotPasswordPage(getDriver()).clickForgotPassword();
 		extentTest.info("clicked Forgot password");
 
-		pom.getForgotPasswordPage(getDriver()).enterEmail("jeyasankar88@habenwir.com");
+		pom.getForgotPasswordPage(getDriver()).enterEmail("jeyasankar@visionias.in");
 
 		pom.getForgotPasswordPage(getDriver()).clickContinue();
 
