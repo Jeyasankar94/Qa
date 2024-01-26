@@ -16,7 +16,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh "${MAVEN_HOME}/bin/mvn clean compile"
+                    bat "%MAVEN_HOME%\\bin\\mvn clean compile"
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 script {
-                    sh "${MAVEN_HOME}/bin/mvn test"
+                    bat "%MAVEN_HOME%\\bin\\mvn test"
                 }
             }
         }
@@ -35,7 +35,7 @@ pipeline {
             emailext attachLog: true,
                 body: 'Test execution ${BUILD_STATUS}',
                 subject: 'Test Execution - ${BUILD_STATUS}',
-                to: 'jeyasankar94cse@gmail.com'
+                to: 'your-email@example.com'
         }
     }
 }
