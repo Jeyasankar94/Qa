@@ -3,7 +3,7 @@
 <suite thread-count="3" name="Failed suite [Sign Up]" guice-stage="DEVELOPMENT">
   <parameter name="author" value="Jeyasankar"/>
   <test thread-count="3" parallel="methods" name=" Forgot Password Test(failed)">
-    <parameter name="browser" value="edge"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="org.testpackage.TC050_ForgotPassword">
         <methods>
