@@ -35,7 +35,7 @@ pipeline {
             emailext attachLog: true,
                 body: 'Test execution ${BUILD_STATUS}',
                 subject: 'Test Execution - ${BUILD_STATUS}',
-                to: 'your-email@example.com'
+                to: 'jeyasankar94cse@gmail.com'
         }
     }
 }

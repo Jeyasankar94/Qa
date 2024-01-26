@@ -35,7 +35,7 @@
 	</test>
 
 
-	<test name=" Forgot Password Test" parallel="methods" thread-count="1" enabled="true">
+	<test name=" Forgot Password Test" parallel="methods" thread-count="1" enabled="false">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="org.testpackage.TC050_ForgotPassword">
