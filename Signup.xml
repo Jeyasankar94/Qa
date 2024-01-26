@@ -22,8 +22,8 @@
 		</classes>
 	</test>
 
-	<test name=" Sign Up page Negative test" enabled="false">
-		<parameter name="browser" value="edge"></parameter>
+	<test name=" Sign Up page Negative test" enabled="true">
+		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="org.testpackage.TC001_Signup">
 				<methods>
