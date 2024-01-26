@@ -16,7 +16,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    bat "%MAVEN_HOME%\\bin\\mvn clean compile"
+                    bat "\"%MAVEN_HOME%\\bin\\mvn\" clean compile"
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 script {
-                    bat "%MAVEN_HOME%\\bin\\mvn test"
+                    bat "\"%MAVEN_HOME%\\bin\\mvn\" test"
                 }
             }
         }
