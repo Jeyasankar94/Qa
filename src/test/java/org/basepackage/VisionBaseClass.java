@@ -135,111 +135,20 @@ public class VisionBaseClass {
 	public void launch( ITestContext context, @Optional("chrome") String browser) {	// @Optional("chrome") String browser
 		
 		if (browser.equalsIgnoreCase("chrome")) {
+			
 		    ChromeOptions options = new ChromeOptions();
-
-		    // Set the path to the Chrome binary (not ChromeDriver)
-		    options.setBinary("/usr/bin/google-chrome");
-
-		    options.addArguments("--disable-gpu");
-		    options.addArguments("--no-sandbox");
-
-		    // Set ChromeDriver system property with longer timeout
-		    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-
+		   
 		    // Instantiate the ChromeDriver with the configured options
 		    setDriver(new ChromeDriver(options));
-		
-			
 	/*		
-		    ChromeOptions options = new ChromeOptions();
-
-		    // Instantiate the ChromeDriver with the configured options
-		    setDriver(new ChromeDriver(options));
-		
-
-
-	/*		
-			
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-			WebDriver driver = new ChromeDriver();
-			setDriver(driver); 
-			
-	/*		
-			WebDriverManager.chromedriver().setup();
-			ChromeOptions options = new ChromeOptions();
-		//	options.setBinary("/usr/lib/chromium-browser/chromedriver");
-			WebDriver driver = new ChromeDriver(options);
-
-			options.addArguments("--headless");
-
-	//	    System.setProperty("webdriver.chrome.driver", "/usr/lib/chromium-browser/chromedriver");
-	//	    WebDriver driver = new ChromeDriver();
-	        setDriver(new ChromeDriver(options));
-		
-	//        System.setProperty("webdriver.chrome.logfile", "/visionweb_qa/reports/chromedriver.log");
-
-		
-*/		
-	/*		
-		
 		if (browser.equalsIgnoreCase("chrome")) {
 	
 			System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			setDriver(driver); 
-
-			
 		
-			   // Setup ChromeDriver using WebDriverManager
+			 // Setup ChromeDriver using WebDriverManager
 	        WebDriverManager.chromedriver().setup();
-
-	        // Set ChromeOptions if needed
-	        ChromeOptions chromeOptions = new ChromeOptions();
-	        // Add any necessary ChromeOptions configurations here
-
-	        // Create ChromeDriver instance with options
-	        WebDriver driver = new ChromeDriver(chromeOptions);
-			
-	        
-	        
-			// Create a new ChromeOptions instance
-			ChromeOptions options = new ChromeOptions();
-			 setDriver(new ChromeDriver(options));
-			// Set the path to the downloaded ChromeDriver executable (not necessary if chromedriver is in /usr/bin)
-			 System.setProperty("webdriver.chrome.driver", " D://Drivers//chromedriver-win64 (2)//chromedriver-win64//chromedriver.exe");
-			
-			// Set binary path for headless mode
-			//options.setBinary("/usr/bin/chromedriver");
-
-			// Add ChromeOptions arguments
-			options.addArguments("--headless");
-			options.addArguments("--disable-gpu");
-			options.addArguments("--no-sandbox");
-
-			// Set capability for command timeout
-			options.setCapability("commandTimeout", "600");
-
-			// Set up ChromeDriver with the specified options
-			WebDriver driver = new ChromeDriver(options);
-
-
-
-	/*		
-			
-			  ChromeOptions options = new ChromeOptions();
-			  
-			  options.setBinary("/usr/lib/chromium-browser/chromedriver");
-			  
-			  options.addArguments("--headless"); 
-			  options.addArguments("--disable-gpu");
-			  options.addArguments("--no-sandbox");
-			  
-			  // Set ChromeDriver system property with longer timeout
-			  System.setProperty("webdriver.chrome.driver","/usr/lib/chromium-browser/chromedriver");
-			  
-			  System.setProperty("webdriver.chrome.driver.command_timeout", "300");
-			  
-			  setDriver(new ChromeDriver(options));
 	*/		 
 
 		}
